@@ -1,0 +1,146 @@
+{
+  "Boats": [
+    {
+      "Id": 1,
+      "Name": "Волна",
+      "Type": "Моторная",
+      "Capacity": 4,
+      "PricePerHour": 1200,
+      "Status": {
+        "IsAvailable": true,
+        "Condition": "Отличное"
+      },
+      "Location": {
+        "Station": "Северная база",
+        "PierNumber": 3
+      }
+    },
+    {
+      "Id": 2,
+      "Name": "Шторм",
+      "Type": "Парусная",
+      "Capacity": 6,
+      "PricePerHour": 1800,
+      "Status": {
+        "IsAvailable": false,
+        "Condition": "Хорошее"
+      },
+      "Location": {
+        "Station": "Южная база",
+        "PierNumber": 5
+      }
+    },
+    {
+      "Id": 3,
+      "Name": "Океан",
+      "Type": "Катер",
+      "Capacity": 8,
+      "PricePerHour": 2500,
+      "Status": {
+        "IsAvailable": true,
+        "Condition": "Новое"
+      },
+      "Location": {
+        "Station": "Центральная база",
+        "PierNumber": 1
+      }
+    }
+  ],
+  "Clients": [
+    {
+      "Id": 1,
+      "FullName": "Кустов Иван",
+      "Phone": "+79990001122",
+      "Passport": "1234 567890",
+      "Discount": 5,
+      "Address": {
+        "City": "Казань",
+        "Street": "Ленина 10"
+      },
+      "Contact": {
+        "Email": "ivan@mail.ru",
+        "EmergencyPhone": "+79990000000"
+      }
+    },
+    {
+      "Id": 2,
+      "FullName": "Лысков Александр",
+      "Phone": "+79991112233",
+      "Passport": "4321 123456",
+      "Discount": 10,
+      "Address": {
+        "City": "Казань",
+        "Street": "Пушкина 5"
+      },
+      "Contact": {
+        "Email": "Sasha@mail.ru",
+        "EmergencyPhone": "+79991110000"
+      }
+    },
+    {
+      "Id": 3,
+      "FullName": "Ильтинбаев Ильгам",
+      "Phone": "+79992223344",
+      "Passport": "1111 222222",
+      "Discount": 0,
+      "Address": {
+        "City": "Уфа",
+        "Street": "Гагарина 7"
+      },
+      "Contact": {
+        "Email": "IlgamIlt@mail.ru",
+        "EmergencyPhone": "+79992220000"
+      }
+    }
+  ],
+  "Rentals": [
+    {
+      "Id": 1,
+      "BoatId": 1,
+      "ClientId": 1,
+      "Date": "2021-04-09",
+      "Hours": 3,
+      "TotalPrice": 3699,
+      "Payment": {
+        "Method": "Карта",
+        "IsPaid": true
+      },
+      "Route": {
+        "StartPoint": "Причал 3",
+        "EndPoint": "Островной маршрут"
+      }
+    },
+    {
+      "Id": 2,
+      "BoatId": 2,
+      "ClientId": 2,
+      "Date": "2024-04-10",
+      "Hours": 2,
+      "TotalPrice": 3699,
+      "Payment": {
+        "Method": "Наличные",
+        "IsPaid": false
+      },
+      "Route": {
+        "StartPoint": "Причал 5",
+        "EndPoint": "Южный залив"
+      }
+    },
+    {
+      "Id": 3,
+      "BoatId": 3,
+      "ClientId": 3,
+      "Date": "2023-04-11",
+      "Hours": 4,
+      "TotalPrice": 11111,
+      "Payment": {
+        "Method": "Карта",
+        "IsPaid": true
+      },
+      "Route": {
+        "StartPoint": "Причал 1",
+        "EndPoint": "Большой круг"
+      }
+    }
+  ]
+}

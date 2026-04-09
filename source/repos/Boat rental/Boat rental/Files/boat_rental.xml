@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BoatRentalData>
+	<Boats>
+		<Boat>
+			<Id>1</Id>
+			<Name>Волна</Name>
+			<Type>Моторная</Type>
+			<Capacity>4</Capacity>
+			<PricePerHour>1200</PricePerHour>
+			<Status>
+				<IsAvailable>true</IsAvailable>
+				<Condition>Отличное</Condition>
+			</Status>
+			<Location>
+				<Station>Северная база</Station>
+				<PierNumber>3</PierNumber>
+			</Location>
+		</Boat>
+		<Boat>
+			<Id>2</Id>
+			<Name>Шторм</Name>
+			<Type>Парусная</Type>
+			<Capacity>6</Capacity>
+			<PricePerHour>1800</PricePerHour>
+			<Status>
+				<IsAvailable>false</IsAvailable>
+				<Condition>Хорошее</Condition>
+			</Status>
+			<Location>
+				<Station>Южная база</Station>
+				<PierNumber>5</PierNumber>
+			</Location>
+		</Boat>
+		<Boat>
+			<Id>3</Id>
+			<Name>Океан</Name>
+			<Type>Катер</Type>
+			<Capacity>8</Capacity>
+			<PricePerHour>2500</PricePerHour>
+			<Status>
+				<IsAvailable>true</IsAvailable>
+				<Condition>Новое</Condition>
+			</Status>
+			<Location>
+				<Station>Центральная база</Station>
+				<PierNumber>1</PierNumber>
+			</Location>
+		</Boat>
+	</Boats>
+
+	<Clients>
+		<Client>
+			<Id>1</Id>
+			<FullName>Кустов Иван</FullName>
+			<Phone>+79990001122</Phone>
+			<Passport>1234 567890</Passport>
+			<Discount>5</Discount>
+			<Address>
+				<City>Казань</City>
+				<Street>Ленина 10</Street>
+			</Address>
+			<Contact>
+				<Email>ivan@mail.ru</Email>
+				<EmergencyPhone>+79990000000</EmergencyPhone>
+			</Contact>
+		</Client>
+		<Client>
+			<Id>2</Id>
+			<FullName>Лысков Александр</FullName>
+			<Phone>+79991112233</Phone>
+			<Passport>4321 123456</Passport>
+			<Discount>10</Discount>
+			<Address>
+				<City>Казань</City>
+				<Street>Пушкина 5</Street>
+			</Address>
+			<Contact>
+				<Email>sasha@mail.ru</Email>
+				<EmergencyPhone>+79991110000</EmergencyPhone>
+			</Contact>
+		</Client>
+		<Client>
+			<Id>3</Id>
+			<FullName>Ильтинбаев Ильгам</FullName>
+			<Phone>+79992223344</Phone>
+			<Passport>1111 222333</Passport>
+			<Discount>0</Discount>
+			<Address>
+				<City>Самара</City>
+				<Street>Гагарина 7</Street>
+			</Address>
+			<Contact>
+				<Email>IlgamIlt@mail.ru</Email>
+				<EmergencyPhone>+79992220000</EmergencyPhone>
+			</Contact>
+		</Client>
+	</Clients>
+
+	<Rentals>
+		<Rental>
+			<Id>1</Id>
+			<BoatId>1</BoatId>
+			<ClientId>1</ClientId>
+			<Date>2021-04-09</Date>
+			<Hours>3</Hours>
+			<TotalPrice>3600</TotalPrice>
+			<Payment>
+				<Method>Карта</Method>
+				<IsPaid>true</IsPaid>
+			</Payment>
+			<Route>
+				<StartPoint>Причал 3</StartPoint>
+				<EndPoint>Островной маршрут</EndPoint>
+			</Route>
+		</Rental>
+		<Rental>
+			<Id>2</Id>
+			<BoatId>2</BoatId>
+			<ClientId>2</ClientId>
+			<Date>2024-04-10</Date>
+			<Hours>2</Hours>
+			<TotalPrice>3600</TotalPrice>
+			<Payment>
+				<Method>Наличные</Method>
+				<IsPaid>false</IsPaid>
+			</Payment>
+			<Route>
+				<StartPoint>Причал 5</StartPoint>
+				<EndPoint>Южный залив</EndPoint>
+			</Route>
+		</Rental>
+		<Rental>
+			<Id>3</Id>
+			<BoatId>3</BoatId>
+			<ClientId>3</ClientId>
+			<Date>2023-04-11</Date>
+			<Hours>4</Hours>
+			<TotalPrice>10000</TotalPrice>
+			<Payment>
+				<Method>Карта</Method>
+				<IsPaid>true</IsPaid>
+			</Payment>
+			<Route>
+				<StartPoint>Причал 1</StartPoint>
+				<EndPoint>Большой круг</EndPoint>
+			</Route>
+		</Rental>
+	</Rentals>
+</BoatRentalData>
