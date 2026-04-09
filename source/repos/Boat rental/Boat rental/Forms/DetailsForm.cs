@@ -25,11 +25,6 @@ namespace Boat_rental.Forms
                 sb.AppendLine($"Доступна: {(boat.Status.IsAvailable ? "Да" : "Нет")}");
                 sb.AppendLine($"Состояние: {boat.Status.Condition}");
             }
-            if (boat.Location != null)
-            {
-                sb.AppendLine($"Доступна: {(boat.Status.IsAvailable ? "Да" : "Нет")}");
-                sb.AppendLine($"Состояние: {boat.Status.Condition}");
-            }
             textBoxDetails.Text = sb.ToString();
         }
         public void ShowClientInfo(Client client)
